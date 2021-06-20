@@ -4,32 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/helpers/reset.css">
+    <link rel="stylesheet" href="./styles/templates/index.css">
     <title>Layout-Basic</title>
 </head>
 <body>
     <div class="container">
         <nav class="navigation">
-            <img src="" alt="logo">
-            <ul>
-                <li><a href="">Quem sou</a></li>
-                <li><a href="">Projetos</a></li>
-                <li><a href="">Contatos</a></li>
-            </ul>
+            <img class="photo-image" src="" alt="logo">
+            <ul class="navigation__links">
+                <li><a class="navigation__links__item-link" href="">About</a></li>
+                <li><a class="navigation__links__item-link" href="">My Porjects</a></li>
+                <li><a class="navigation__links__item-link" href="">Contacts</a></li>
+            </ul>                                                                                                                                                                                                                                                                                                                                                       
         </nav>
-
         <aside class="aside">
-            <img src="" alt="img">
+            <img class="photo-image" src="" alt="img">
             <div>
-                <h1>Adelto Almeida</h1>
-                <p>Front-End Developer</>
-                <p>contato.adtodevelope@gmail.com</p>
+                <h1 class="pesson-name">Adelto Almeida</h1>
+                <p class="pesson-details">Front-End Developer</p>
+                <p class="person-details">contato.adtodevelope@gmail.com</p>
             </div>
-            <ul>
+            <ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
                 <li><a href=""><img src="" alt=""></a></li>
                 <li><a href=""><img src="" alt=""></a></li>
                 <li><a href=""><img src="" alt=""></a></li>
             </ul>
         </aside>
+        <main class="main">
+            <section class="main__about">
+                <img class="photo-image" src="" alt="img">
+                <div>
+                    <h2>who am I ?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis blanditiis unde magnam aperiam, illum reprehenderit ullam iure provident placeat consequuntur impedit voluptatem itaque natus neque aliquid enim porro optio repudiandae?</p>
+                </div>
+            </section>
+            <section class="main__projects">
+                <h2>Projects</h2>
+                <div>
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+            </section>
+            <section class="main__contact">
+                <h2>Contact</h2>
+                <p>leave your contact here below</p>
+                <form action="">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="here your name ..">
+                   
+                    <label for="email">Email:</label>
+                    <input type="email  " name="enail" id="enail" placeholder="here your enail ..">
+                   
+                    <label for="tel">Number:</label>
+                    <input type="tel" name="tel" id="tel" placeholder="+00 (00)0000-00000">
+
+                    <label for="">Mensager</label>
+                    <textarea name="mensager" id="mensager" cols="30" rows="10"></textarea>
+                    <button type="submit">send </button>
+                </form>
+            </section>
+        </main>
+        <footer class="footer">
+            <h3>@adtodeveloper</h3>
+        </footer>
     </div>
 </body>
 </html>
